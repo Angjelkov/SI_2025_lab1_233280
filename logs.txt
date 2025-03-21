@@ -1,0 +1,20 @@
+*   d2bcd88 (HEAD -> master, origin/master, origin/HEAD) Merge pull request #12
+from Angjelkov/7-count-tasks-per-category
+|\
+| * 47b3373 (origin/7-count-tasks-per-category, 7-count-tasks-per-category) 3 ta
+sk solved
+* |   bf99e1f Merge pull request #11 from Angjelkov/4-sort-tasks-by-priority
+|\ \
+| * | 9e04f1c (origin/4-sort-tasks-by-priority, 4-sort-tasks-by-priority) 2 task
+ solved
+| |/
+* |   817661d Merge pull request #10 from Angjelkov/1-remove-a-task-by-name
+|\ \
+| |/
+|/|
+| | * 107064f (1-remove-a-task-by-name) 1 task solved
+| |/
+| * 0bf0aec (origin/1-remove-a-task-by-name) 1 task solved
+|/
+* ece63ef Add starter code
+* ad68fd5 first commit
