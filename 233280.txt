@@ -1,3 +1,14 @@
+[20-ти чекор проверува дали гранката која ја спојуваме има конфликти со master. Јас додека решавав не добив конфликт.]
+[22-ти чекор ја спојува локално третата гранка во master. Со командата git pull origin master се ажурира master со промените од remote репозиториумот]
+[Објаснување на git команди:]
+[git branch - служи за проверување достапни гранки]
+[git clone - служи за клонирање на репозиториум]
+[git fetch origin - служи за земање на промените од remote репозиториумот]
+[git pull origin master - служи за спојување на промените од гранката master na локалниот master]
+[git add . - служи за да се додадат сите датотеки]
+[git commit -m "Add file" - служи за зачувување на промените со порака] 
+[git checkout - служи за префрлање од една во друга гранка] 
+
 PETAR@DESKTOP-CBIH4F4 MINGW64 ~/Desktop/SI_2025_lab1_233280
 $ git init
 Initialized empty Git repository in C:/Users/PETAR/Desktop/SI_2025_lab1_233280/.
@@ -344,4 +355,41 @@ sk solved
 * ad68fd5 first commit
 
 PETAR@DESKTOP-CBIH4F4 MINGW64 ~/Desktop/SI_2025_lab1_233280 (master)
-$
+$ git clone https://github.com/Angjelkov/SI_2025_lab1_151020.git
+Cloning into 'SI_2025_lab1_151020'...
+remote: Enumerating objects: 26, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 26 (delta 1), reused 0 (delta 0), pack-reused 23 (from 1)
+Receiving objects: 100% (26/26), 5.56 KiB | 812.00 KiB/s, done.
+Resolving deltas: 100% (7/7), done.
+
+PETAR@DESKTOP-CBIH4F4 MINGW64 ~/Desktop/SI_2025_lab1_233280 (master)
+$ cd SI_2025_lab1_151020
+
+PETAR@DESKTOP-CBIH4F4 MINGW64 ~/Desktop/SI_2025_lab1_233280/SI_2025_lab1_151020 (master)
+$ nano 233280.txt
+
+PETAR@DESKTOP-CBIH4F4 MINGW64 ~/Desktop/SI_2025_lab1_233280/SI_2025_lab1_151020 (master)
+$ git add .
+warning: in the working copy of '233280.txt', LF will be replaced by CRLF the ne
+xt time Git touches it
+
+PETAR@DESKTOP-CBIH4F4 MINGW64 ~/Desktop/SI_2025_lab1_233280/SI_2025_lab1_151020 (master)
+$ git commit -m "Add file"
+[master c4b1c17] Add file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 233280.txt
+
+PETAR@DESKTOP-CBIH4F4 MINGW64 ~/Desktop/SI_2025_lab1_233280/SI_2025_lab1_151020 (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 297 bytes | 297.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Angjelkov/SI_2025_lab1_151020.git
+   bb2576c..c4b1c17  master -> master
+
